@@ -4,130 +4,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoogleFormAutomation</title>
+    <title>FormBoost - Google Form Automation</title>
+    <meta name="description"
+        content="Get realistic, tailored responses to your Google Forms instantly to kickstart surveys with clean sample data.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <section class="hero">
-        <header>
-            <div class="logo">
-                FormBoost
-            </div>
-            <div class="header-btn">
-                Book a Slot
-            </div>
-        </header>
-        <div class="container">
-            <div class="content">
-                <div class="main">
-                    <div class="left-hero">
-                        <div class="text">
-                            <h1>Boost Your Google Form Responses Instantly</h1>
-                            <p>
-                                Get realistic, tailored responses to your Google Forms within hours. Ideal for pilots, demos,
-                                and kickstarting your surveys with clean sample data.
-                            </p>
-                            <button>Book Now</button>
-                        </div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
 
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                <span>FormBoost</span>
+            </div>
+            <a href="#pricing" class="btn-outline">
+                Book a Slot
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <div class="hero-content reveal">
+                <div class="badge">🚀 The ultimate forms companion</div>
+                <h1 class="gradient-text">Boost Your Google Form Responses Instantly</h1>
+                <p>
+                    Get realistic, tailored responses to your Google Forms within hours. Ideal for pilots, demos,
+                    and kickstarting your surveys with clean sample data.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn-primary">
+                        Book Now
+                        <div class="btn-glow"></div>
+                    </button>
+                    <button class="btn-secondary">View Demo</button>
+                </div>
+            </div>
+            <div class="hero-visual reveal delay-1">
+                <div class="glass-panel main-mockup">
+                    <div class="mockup-header">
+                        <div class="dot red"></div>
+                        <div class="dot yellow"></div>
+                        <div class="dot green"></div>
                     </div>
-                    <div class="right">
-                        <img src="assets/hero.jpg" alt="" srcset="">
+                    <div class="mockup-body">
+                        <div class="skeleton-title"></div>
+                        <div class="skeleton-line"></div>
+                        <div class="skeleton-line short"></div>
+                        <div class="chart-container">
+                            <div class="bar" style="height: 40%"></div>
+                            <div class="bar" style="height: 70%"></div>
+                            <div class="bar" style="height: 50%"></div>
+                            <div class="bar" style="height: 90%; background: var(--accent-main);">
+                                <div class="floating-badge">+2.4k</div>
+                            </div>
+                            <div class="bar" style="height: 60%"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="featured">
-                    <div class="featured-card">
-                        <div class="icon">
-                            01
-                        </div>
-                        <div class="featured-title">
-                            Human‑like responses
-                        </div>
-                        <p>
-                            Responses are crafted to look natural and varied, helping your form feel truly active.
-                        </p>
-                    </div>
-                    <div class="featured-card">
-                        <div class="icon">
-                            02
-                        </div>
-                        <div class="featured-title">
-                            Fast turnaround
-                        </div>
-                        <p>
-                            Most requests are fulfilled within 24–48 hours, so you can move from idea to insight quickly.
-                        </p>
-                    </div>
-                    <div class="featured-card">
-                        <div class="icon">
-                            03
-                        </div>
-                        <div class="featured-title">
-                            Simple & transparent
-                        </div>
-                        <p>
-                            Clear, upfront pricing with no subscriptions or hidden add‑ons—only pay for what you need.
-                        </p>
-                    </div>
+            </div>
+        </section>
+
+        <section class="features container">
+            <div class="feature-card glass-card reveal">
+                <div class="icon-wrapper">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                </div>
+                <h3>Human‑like responses</h3>
+                <p>Responses are crafted to look natural and varied, helping your form feel truly active and authentic.
+                </p>
+            </div>
+            <div class="feature-card glass-card reveal delay-1">
+                <div class="icon-wrapper">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                </div>
+                <h3>Fast turnaround</h3>
+                <p>Most requests are fulfilled within 24–48 hours, so you can move from idea to insight quickly.</p>
+            </div>
+            <div class="feature-card glass-card reveal delay-2">
+                <div class="icon-wrapper">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="3" y1="9" x2="21" y2="9"></line>
+                        <line x1="9" y1="21" x2="9" y2="9"></line>
+                    </svg>
+                </div>
+                <h3>Simple & transparent</h3>
+                <p>Clear pricing with no hidden add‑ons—only pay exactly for what you need.</p>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing-section container reveal">
+            <div class="section-header">
+                <h2>Simple, <span class="gradient-text">Transparent</span> pricing</h2>
+                <p>Choose the package that matches your testing or launch needs.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card glass-card reveal">
+                    <div class="pricing-responses">500 Responses</div>
+                    <div class="price"><span class="currency">₹</span>250</div>
+                    <ul class="features-list">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Natural Variations</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> 24h - 48h Delivery</li>
+                    </ul>
+                    <button class="btn-outline full-width">Select Plan</button>
+                </div>
+                <div class="pricing-card glass-card reveal delay-1">
+                    <div class="pricing-responses">1000 Responses</div>
+                    <div class="price"><span class="currency">₹</span>500</div>
+                    <ul class="features-list">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Natural Variations</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> 24h - 48h Delivery</li>
+                    </ul>
+                    <button class="btn-outline full-width">Select Plan</button>
+                </div>
+                <div class="pricing-card glass-card popular reveal delay-2">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-responses">1500 Responses</div>
+                    <div class="price"><span class="currency">₹</span>750</div>
+                    <ul class="features-list">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Natural Variations</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Priority Delivery</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Custom Data Patterns</li>
+                    </ul>
+                    <button class="btn-primary full-width">Select Plan</button>
+                </div>
+                <div class="pricing-card glass-card reveal delay-3">
+                    <div class="pricing-responses">2000 Responses</div>
+                    <div class="price"><span class="currency">₹</span>1000</div>
+                    <ul class="features-list">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Natural Variations</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Priority Delivery</li>
+                    </ul>
+                    <button class="btn-outline full-width">Select Plan</button>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="pricing">
-        <h1>
-            Simple, Transparent pricing
-        </h1>
-        <p>
-            Choose the package that matches your testing or launch needs.
-        </p>
-        <div class="pricing">
-            <div class="pricing-card">
-                <span class="price">
-                    ₹ 250
-                </span>
-                <span class="response">
-                    500
-                </span>
-                <span class="duration">
-                    24h-48h
-                </span>
+        </section>
+
+        <footer>
+            <div class="container footer-content">
+                <p>&copy; 2024 FormBoost. All rights reserved.</p>
             </div>
-            <div class="pricing-card">
-                <span class="price">
-                    ₹ 500
-                </span>
-                <span class="response">
-                    1000
-                </span>
-                <span class="duration">
-                    24h-48h
-                </span>
-            </div>
-            <div class="pricing-card">
-                <span class="price">
-                    ₹ 750
-                </span>
-                <span class="response">
-                    1500
-                </span>
-                <span class="duration">
-                    24h-48h
-                </span>
-            </div>
-            <div class="pricing-card">
-                <span class="price">
-                    ₹ 1000
-                </span>
-                <span class="response">
-                    2000
-                </span>
-                <span class="duration">
-                    24h-48h
-                </span>
-            </div>
-        </div>
-    </section>
+        </footer>
+    </main>
+
+    <script>
+        const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        document.querySelectorAll('.reveal').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 
 </html>
