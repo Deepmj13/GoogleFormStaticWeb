@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment | FormBoost</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Public+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="pages.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="container row">
+            <a href="../index.html" class="brand">FormBoost</a>
+            <p class="crumb">Step 2 of 2</p>
+        </div>
+    </header>
+
+    <main class="container page-grid payment-grid">
+        <section class="card wide">
+            <h1>Complete payment</h1>
+            <p class="lead">Scan the QR code using any UPI app. Keep the same name for easier verification.</p>
+
+            <form id="payment-form" class="form-grid compact">
+                <label>
+                    Your Name
+                    <input type="text" id="name" required>
+                </label>
+                <label>
+                    Amount (INR)
+                    <input type="number" id="amount" min="1" required>
+                </label>
+                <label class="full">
+                    UPI ID (receiver)
+                    <input type="text" id="upiId" value="yourupiid@upi" required>
+                </label>
+                <button class="btn btn-primary full" type="submit">Generate Payment QR</button>
+            </form>
+
+            <div class="qr-wrapper" id="qrWrapper" hidden>
+                <img id="qr" alt="Generated UPI QR code">
+                <div class="upi-text">
+                    <h3>Payment link</h3>
+                    <p id="upiLink"></p>
+                </div>
+            </div>
+        </section>
+
+        <aside class="card">
+            <h2>Request details</h2>
+            <dl class="summary" id="requestSummary"></dl>
+            <a class="btn btn-outline full" href="request.html">Edit request</a>
+        </aside>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
