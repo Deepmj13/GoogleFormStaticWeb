@@ -69,15 +69,8 @@ const RequestForm = () => {
 
             const data = await response.json();
 
-            // Navigate to payment page and pass order data state
-            navigate('/payment', {
-                state: {
-                    orderId: data.orderId,
-                    razorpayOrderId: data.razorpayOrderId,
-                    amount: data.amount,
-                    key_id: data.key_id
-                }
-            });
+            alert('Order created successfully! It is now pending admin approval.');
+            navigate('/');
         } catch (err) {
             setError(err.message || 'Something went wrong');
         } finally {
@@ -138,7 +131,7 @@ const RequestForm = () => {
                         </label>
 
                         <button className="btn btn-primary full" type="submit" disabled={loading}>
-                            {loading ? 'Processing...' : 'Continue to Payment'}
+                            {loading ? 'Processing...' : 'Submit Request'}
                         </button>
                     </form>
                 </section>
